@@ -93,13 +93,18 @@ h1 {
     padding: 0 10px;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #00d0ff5e;
+    background-color:  #00d0ffb1;
     border: none;
-    box-shadow: 0 5px 10px #000000b4;
-    transition: 0.5s;
+    box-shadow: 3px 3px 1px #00d0ff5e;
+    transition: 0.2s;
     cursor: pointer;
 }
 
 .form button:hover {
-    background-color: #00d0ffb1;
+    background-color: #00d0ffd3;
+}
+
+.form button:active{
+    transform: translate(1px,1px);
+    box-shadow: 2px 2px 1px #00d0ff5e;
 }
