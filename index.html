@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="icon" href="online-survey.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form class="form" id="form" action="/">
+            <div>
+                <input placeholder="Name" type="text" id="name">
+                <i class="fa-solid fa-user"></i>
+                <span class="error"></span>
+            </div>
+            <div>
+                <input placeholder="Email" type="email" id="email">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="error"></span>
+            </div>
+            <div>
+                <input placeholder="Password" type="text" id="password">
+                <i class="fa-solid fa-unlock"></i>
+                <span class="error"></span>
+            </div>
+            <div>
+                <input placeholder="Conform password" id="password2"  type="password">                
+                <i class="fa-solid fa-lock"></i>
+                <span class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f36ad5317b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
