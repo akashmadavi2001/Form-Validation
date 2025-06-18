@@ -17,17 +17,17 @@ body {
     justify-content: center;
 }
 
-h1 {
-    text-align: center;
-    text-shadow: 0 5px 5px black;
-}
-
 .container {
     background-color: #00000060;
     backdrop-filter: blur(3px);
     padding: 2rem 4rem;
     border-radius: 10px;
     box-shadow: 0 5px 20px #000000c1;
+}
+
+.container h1 {
+    text-align: center;
+    text-shadow: 0 5px 5px black;
 }
 
 .form {
