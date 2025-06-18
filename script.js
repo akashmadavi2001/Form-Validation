@@ -12,7 +12,6 @@ form.addEventListener('submit', (e) => {
 const setSuccess = (element) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector(".error");
-
     errorDisplay.innerText = "";
     inputControl.classList.remove('error');
     inputControl.classList.add('success');
@@ -21,7 +20,6 @@ const setSuccess = (element) => {
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector(".error");
-
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
@@ -38,6 +36,7 @@ const validateInput = () => {
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
+    // Name
     if (nameValue === "") {
         setError(username, "Name is required");
     }
@@ -45,6 +44,7 @@ const validateInput = () => {
         setSuccess(username);
     }
 
+    // Email
     if (emailValue === "") {
         setError(email, "Email is required");
     }
@@ -55,6 +55,7 @@ const validateInput = () => {
         setSuccess(email);
     }
 
+    // Password
     if (passwordValue === "") {
         setError(password, "Password is required");
     }
@@ -65,6 +66,7 @@ const validateInput = () => {
         setSuccess(password);
     }
 
+    // Conform password
     if (password2Value === "") {
         setError(password2, "Conform password is required");
     }
