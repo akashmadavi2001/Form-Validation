@@ -9,7 +9,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: url(bg.jpg);
+    background: url(./bg.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -108,3 +108,4 @@ body {
     transform: translate(1px,1px);
     box-shadow: 2px 2px 1px #00d0ff5e;
 }
+
