@@ -70,10 +70,11 @@ const validateInput = () => {
     if (password2Value === "") {
         setError(password2, "Conform password is required");
     }
-    else if(password2Value!==passwordValue){
+    else if(password2Value !== passwordValue){
         setError(password2,"Password doesn't match.")
     }
     else {
         setSuccess(password2);
     }
 };
+
